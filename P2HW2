@@ -1,0 +1,32 @@
+#P2HW2
+#MALCOLM MCKAYLE
+#WED OCT 11, 2023
+#LISTS
+
+
+
+
+# make an empty list to store grades
+grades = []
+
+# Get grades from the user for each module
+for i in range(1, 6):
+    grade = float(input(f"Enter the grade for Module {i}: "))
+    grades.append(grade)
+
+# Calculate the lowest and highest grades
+lowest_grade = min(grades)
+highest_grade = max(grades)
+
+# Calculate the sum of grades
+total_grades = sum(grades)
+
+# Calculate the average of grades
+average_grade = total_grades / len(grades)
+
+# Display the results with the specified formatting
+print(f"Lowest Grade: {lowest_grade:.2f}")
+print(f"Highest Grade: {highest_grade:.2f}")
+print(f"Sum of Grades: {total_grades:.2f}")
+print(f"Grades' Average: {average_grade:.2f}")
+
